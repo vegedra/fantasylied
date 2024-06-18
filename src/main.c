@@ -1,4 +1,11 @@
-﻿#include <stdio.h>
+﻿/******************************************************************************
+
+                            	Fantasy Lied
+                             by Pedro Ivo, 2024
+
+*******************************************************************************/
+
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <curses.h> // Biblioteca PDCurses (curses pra windows)

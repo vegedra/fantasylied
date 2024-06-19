@@ -34,7 +34,7 @@ typedef struct {
 
 // Variavéis
 Room rooms[NUM_ROOMS];          // Array das Rooms
-Event events[NUM_EVENTS];		// Array dos eventos
+Event events[NUM_EVENTS];	// Array dos eventos
 int currentRoomIndex = 0;       // Index da room atual
 char player_move[10];           // Input do movimento do jogador
 int player_hp = 10;             // Pontos de vida do jogador, se chegar a 0 ele morre
@@ -49,10 +49,10 @@ void initializeEvents();
 
 int main(void) {
     // Inicializa PDCurses
-    initscr();          // Inicia a tela
-    cbreak();           // Desabilita line buffering
-    keypad(stdscr, TRUE); // Habilita caracteres especiais
-    //noecho();           // Desativa a exibição de teclas pressionadas
+    initscr();               // Inicia a tela
+    cbreak();                // Desabilita line buffering
+    keypad(stdscr, TRUE);    // Habilita caracteres especiais
+    //noecho();              // Desativa a exibição de teclas pressionadas
 
     // Inicializa as salas e eventos
     initializeRooms();
@@ -152,7 +152,7 @@ void initializeRooms() {
 
 // Exibe a localização e a descrição atuais do jogador
 void displayPlayerStats() {
-    mvprintw(0, 0, "%s está em %s  |  HP: %d\n", name, rooms[currentRoomIndex].name, player_hp);
+    mvprintw(0, 0, "%s is in %s  |  HP: %d\n", name, rooms[currentRoomIndex].name, player_hp);
     mvprintw(1, 0, "%s\n", rooms[currentRoomIndex].description);
 	
 	// debug
@@ -168,13 +168,13 @@ void displayPlayerStats() {
 // Cuida do movimento do jogador com base no input do mesmo
 void handleMovement() {
     int newRoomIndex = -1;
-    char directions[][10] = {"norte", "sul", "leste", "oeste", "sair"};
+    char directions[][10] = {"north", "south", "east", "west", "exit"};
     int validDirection = 0;
 
     while (1) {
         clear();
         displayPlayerStats();
-        mvprintw(4, 0, "Escolha uma direção cardinal ou 'sair' para voltar ao menu inicial.");
+        mvprintw(4, 0, "Type a direction or 'exit' to return to the main menu.");
         mvprintw(5, 0, "> ");
         refresh();
 

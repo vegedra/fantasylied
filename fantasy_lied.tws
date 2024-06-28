@@ -37,7 +37,7 @@ p18
 (dp20
 S'text'
 p21
-VHá milênios existiu uma terra rica e próspera, alguns dizem ter sido o berço da humanidade e da magia, porém, com o ataque e regime cruel de 1000 anos do Herói Traidor Matin'ornom, o arquipélago de Etrun'ya desapareceu.\u000a\u000aDizem que quem encontrar a terra perdida poderá se tornar Rei e possuir o que magos e estudiosos matariam para ter: todo o conhecimento de Mundia.\u000a\u000a<<set $inventario to []>>\u000a\u000a[[Continuar]]
+VAperte [[aqui.|Introdução]] para iniciar o jogo. \u000a\u000a<<set $inventario to []>>
 p22
 sS'title'
 p23
@@ -50,12 +50,12 @@ struct_time
 p26
 ((I2024
 I6
-I23
-I19
-I18
-I19
-I6
-I175
+I27
+I20
+I52
+I13
+I3
+I179
 I0
 tp27
 (dp28
@@ -224,8 +224,8 @@ g14
 I00
 sg15
 (lp81
-F163.0
-aF9.0
+F304.0
+aF13.0
 asg17
 (itiddlywiki
 Tiddler
@@ -274,8 +274,8 @@ g14
 I00
 sg15
 (lp96
-F386.0
-aF9.0
+F447.0
+aF15.0
 asg17
 (itiddlywiki
 Tiddler
@@ -378,12 +378,12 @@ sg25
 g26
 ((I2024
 I6
-I23
-I19
-I18
 I27
-I6
-I175
+I20
+I43
+I59
+I3
+I179
 I0
 tp127
 (dp128
@@ -391,9 +391,7 @@ tp129
 Rp130
 sg31
 (lp131
-Vpeanut
-p132
-asg33
+sg33
 g26
 ((I2024
 I6
@@ -404,28 +402,28 @@ I35
 I6
 I175
 I0
-tp133
-(dp134
-tp135
-Rp136
-sbsa(dp137
+tp132
+(dp133
+tp134
+Rp135
+sbsa(dp136
 g14
 I00
 sg15
-(lp138
+(lp137
 F394.0
 aF308.0
 asg17
 (itiddlywiki
 Tiddler
-p139
-(dp140
+p138
+(dp139
 g21
 VProcuro por algum cofre dentro da taverna, mas não encontro nenhum.\u000a\u000a[[Sair|Seguir ao norte]]
-p141
+p140
 sg23
 VCofre
-p142
+p141
 sg25
 g26
 ((I2024
@@ -437,12 +435,12 @@ I55
 I6
 I175
 I0
-tp143
-(dp144
-tp145
-Rp146
+tp142
+(dp143
+tp144
+Rp145
 sg31
-(lp147
+(lp146
 sg33
 g26
 ((I2024
@@ -454,28 +452,28 @@ I53
 I6
 I175
 I0
-tp148
-(dp149
-tp150
-Rp151
-sbsa(dp152
+tp147
+(dp148
+tp149
+Rp150
+sbsa(dp151
 g14
 I00
 sg15
-(lp153
+(lp152
 F202.0
 aF308.0
 asg17
 (itiddlywiki
 Tiddler
-p154
-(dp155
+p153
+(dp154
 g21
 VAo procurar um pouco mais no salão encontro a área onde fica os quartos para os clientes dormirem, testo a chave em cada uma das portas mas nenhuma abre.\u000a\u000aDevo usar a força para abrir as portas?\u000a\u000a[[Sim]]\u000a[[Não|Seguir ao norte]]
-p156
+p155
 sg23
 VPorta
-p157
+p156
 sg25
 g26
 ((I2024
@@ -487,12 +485,12 @@ I58
 I6
 I175
 I0
-tp158
-(dp159
-tp160
-Rp161
+tp157
+(dp158
+tp159
+Rp160
 sg31
-(lp162
+(lp161
 sg33
 g26
 ((I2024
@@ -504,28 +502,28 @@ I53
 I6
 I175
 I0
-tp163
-(dp164
-tp165
-Rp166
-sbsa(dp167
+tp162
+(dp163
+tp164
+Rp165
+sbsa(dp166
 g14
 I00
 sg15
-(lp168
+(lp167
 F244.0
 aF455.0
 asg17
 (itiddlywiki
 Tiddler
-p169
-(dp170
+p168
+(dp169
 g21
 VChuto cada uma das portas com toda minha força, mas a única que consigo abrir possui uma antiga espada enferrujada!\u000a\u000aBem, eu vim desarmado, então é melhor que nada...\u000a\u000a[[Sair|Seguir ao norte]]\u000a\u000a<<set $cansado to true>>\u000a<<run $inventario.push("Espada enferrujada")>>\u000a\u000a
-p171
+p170
 sg23
 VSim
-p172
+p171
 sg25
 g26
 ((I2024
@@ -537,12 +535,12 @@ I55
 I6
 I175
 I0
-tp173
-(dp174
-tp175
-Rp176
+tp172
+(dp173
+tp174
+Rp175
 sg31
-(lp177
+(lp176
 sg33
 g26
 ((I2024
@@ -554,47 +552,47 @@ I1
 I6
 I175
 I0
-tp178
-(dp179
-tp180
-Rp181
-sbsa(dp182
+tp177
+(dp178
+tp179
+Rp180
+sbsa(dp181
 g14
 I00
 sg15
-(lp183
-F9.0
-aF422.0
+(lp182
+F10.0
+aF429.0
 asg17
 (itiddlywiki
 Tiddler
-p184
-(dp185
+p183
+(dp184
 g21
-Vbody {\u000a  margin: 0;\u000a  background-color:#000;\u000a}\u000a#passages {\u000a  margin: 0;\u000a  padding: 0;\u000a  border: 0;\u000a}\u000a.passage {\u000a  width: 20%;\u000a  min-width: 26em;\u000a  height: 33%;\u000a  min-height: 33%;\u000a  font-family: "Times New Roman",serif;\u000a  letter-spacing: 0.1em;\u000a  padding: 1.5em;\u000a  padding-left: 2em;\u000a  font-size:1.4em;\u000a  background-color:#000;\u000a  color:#eee;\u000a  margin: 10%;\u000a  border: silver ridge 0.8em;\u000a  border-radius: 1em;\u000a}\u000a.passage[data-tags~=mint] {\u000a  border-color: MediumAquaMarine;\u000a}\u000a.passage[data-tags~=strawberry] {\u000a  border-color: HotPink;\u000a}\u000a.passage[data-tags~=banana] {\u000a  border-color: Gold;\u000a}\u000a.passage[data-tags~=peanut] {\u000a  border-color: Peru;\u000a}\u000a.content::before {\u000a  content: '&#8226;';\u000a  position: relative;\u000a  left: -0.6em;\u000a  margin-right: -0.4em;\u000a}\u000aa.internalLink, a.externalLink {\u000a  border-bottom: solid #fff 1px;\u000a  color:#eee;\u000a  font-weight:normal;\u000a}\u000aa.internalLink:hover, a.externalLink:hover {\u000a  text-decoration:none;\u000a  border-bottom: solid #fff 2px;\u000a  color:#fff;\u000a  font-weight:normal;\u000a  padding-left: 0;\u000a}\u000aa.internalLink:active, a.externalLink:active {\u000a  border-bottom: 0;\u000a}\u000a#sidebar {\u000a  display:none;\u000a}
-p186
+V:root {\u000a  --body: #0a0a0a;\u000a  --text: #777;\u000a  --silver: #d9d9d9;\u000a  --accent2: #222;\u000a  --banner-top: url("https://cdn.discordapp.com/attachments/786579757755400193/888398076216225832/bannertop.png");\u000a  --banner-bottom: url("https://cdn.discordapp.com/attachments/786579757755400193/888398177869373460/bannerbottom.png");\u000a  --back: url("https://cdn.discordapp.com/attachments/786579757755400193/888418932996861972/back.png");\u000a  --body-font: 'Playfair Display', serif;\u000a  --header-font: 'Playfair Display SC', serif;\u000a  --accent-font: 'Playfair Display SC', serif;\u000a}\u000a\u000a* {\u000a  box-sizing: border-box;\u000a  margin: 0;\u000a  padding: 0;\u000a}\u000a\u000abody {\u000a  background-color: var(--body);\u000a  color: var(--text);\u000a  font-family: var(--body-font);\u000a}\u000a\u000ah1 {\u000a  font-family: var(--accent-font);\u000a  font-size: 3em;\u000a  text-align: right;\u000a  margin: 0;\u000a}\u000a\u000a#ui-bar {\u000a  background-image: var(--banner-top), var(--banner-bottom);\u000a  background-size: contain;\u000a  background-repeat: no-repeat;\u000a  background-position: center top, center bottom;\u000a  background-color: transparent;\u000a  border: none;\u000a  cursor: default;\u000a}\u000a\u000a#ui-bar-body {\u000a  margin: 15vh 0vw;\u000a}\u000a\u000a#story-author {\u000a  font-family: var(--accent-font);\u000a  font-size: 1.5em;\u000a  margin-top: 1vh;\u000a}\u000a\u000a#story-title {\u000a  font-family: var(--header-font);\u000a  border-bottom: 1px solid var(--accent2);\u000a  padding: 1vh 2vw;\u000a  text-align: center;\u000a}\u000a\u000a#menu-item-saves a::before, \u000a#menu-item-settings a::before, \u000a#menu-item-restart a::before {\u000a  content: none;\u000a}\u000a\u000a#menu ul {\u000a  border: none;\u000a  letter-spacing: .1rem;\u000a  margin: 0;\u000a}\u000a\u000a#menu li, \u000a#menu li a {\u000a  border: none;\u000a  letter-spacing: .1rem;\u000a  transition: .4s;\u000a  color: var(--text);\u000a}\u000a\u000a#menu li a:hover {\u000a  border: none;\u000a  background-color: transparent;\u000a  color: var(--silver);\u000a}\u000a\u000a#ui-bar-history, #ui-bar-toggle {\u000a  display: none;\u000a}\u000a\u000a#passages {\u000a  border-top: 1px solid var(--accent2);\u000a  padding: 5vh 5vw 5vh 25vw;\u000a  margin: 0;\u000a  max-width: 100vw;\u000a  width: 100vw;\u000a  height: 100%;\u000a  overflow-y: scroll;\u000a  scrollbar-width: thin;\u000a  border-bottom: 1px solid var(--accent2);\u000a  scrollbar-color: var(--accent2) transparent;\u000a}\u000a\u000a#passages a {\u000a  color: var(--silver);\u000a  text-decoration: none;\u000a  transition: .4s;\u000a}\u000a\u000a#passages a:hover {\u000a  color: var(--text);\u000a  text-decoration: none;\u000a}\u000a\u000a#passages a:before {\u000a  content: "- ";\u000a}\u000a\u000a.passage {\u000a  line-height: 1.6;\u000a  height: 90vh;\u000a  font-size: 1.2em;\u000a}\u000a\u000a#menu-core li:first-child, \u000a#menu-core li:not(:first-child), \u000a#menu li:not(:first-child) {\u000a  border-top: 1px solid var(--accent2);\u000a}\u000a\u000a#story {\u000a  margin-left: 0vw;\u000a  margin-top: 5px;\u000a  margin-bottom: 5px;\u000a  height: calc(100vh - 12px);\u000a}\u000a\u000abutton {\u000a  background-color: transparent;\u000a  border: none;\u000a  font-family: var(--header-font);\u000a  color: var(--silver);\u000a}\u000a\u000abutton:hover {\u000a  background-color: transparent;\u000a  border: none;\u000a  color: var(--gold);\u000a}\u000a\u000abutton:disabled {\u000a  background-color: transparent;\u000a  border: none;\u000a}\u000a\u000a#ui-dialog {\u000a  width: 50vw;\u000a  background-color: var(--body);\u000a}\u000a\u000a#ui-dialog-titlebar {\u000a  background-color: var(--body);\u000a  border: 1px solid var(--accent2);\u000a}\u000a\u000a#ui-dialog-title {\u000a  font-family: var(--header-font);\u000a}\u000a\u000a#ui-dialog-close {\u000a  height: 100%;\u000a}\u000a\u000a#ui-dialog-body {\u000a  background-color: var(--body);\u000a  border: 1px solid var(--accent2);\u000a  border-top: none;\u000a}\u000a\u000a#ui-dialog-body.saves tr:not(:first-child), \u000a#ui-dialog-body.saves > :not(:first-child) {\u000a  border-top: 1px solid var(--accent2);\u000a}\u000a\u000a/* width */\u000a::-webkit-scrollbar {\u000a  width: 10px;\u000a}\u000a\u000a/* Track */\u000a::-webkit-scrollbar-track {\u000a  background: transparent;\u000a}\u000a\u000a/* Handle */\u000a::-webkit-scrollbar-thumb {\u000a  background: var(--accent2);\u000a}\u000a\u000a/* Handle on hover */\u000a::-webkit-scrollbar-thumb:hover {\u000a  background: #555;\u000a}\u000a\u000a@media screen and (max-width: 800px) {\u000a  #ui-bar-toggle {\u000a    display: block;\u000a    color: var(--text);\u000a    background-color: transparent;\u000a    border: none;\u000a  }\u000a  \u000a  #ui-bar-toggle:hover {\u000a    background-color: transparent;\u000a    border: none;\u000a    color: var(--silver);\u000a  }\u000a  \u000a  #ui-bar {\u000a    width: 100vw;\u000a    background-color: var(--body);\u000a  }\u000a  \u000a  #ui-bar.stowed {\u000a    left: -90vw;\u000a  }\u000a  \u000a  #ui-bar.stowed ~ #story {\u000a    margin-left: 10vw;\u000a  }\u000a  \u000a  #passages {\u000a    padding: 5vh 5vw 0vh 0vw;\u000a    width: 90vw;\u000a  }\u000a  \u000a  h1 {\u000a    text-align: center;\u000a  }\u000a  \u000a  #ui-dialog {\u000a    top: 0;\u000a    left: 0;\u000a    width: calc(100vw - 32px);\u000a    height: calc(100vh - 32px);\u000a  }\u000a  \u000a  #ui-dialog-body, \u000a  #ui-dialog-titlebar {\u000a    width: 100%;\u000a  }\u000a}\u000a
+p185
 sg23
 VStory Stylesheet
-p187
+p186
 sg25
 g26
 ((I2024
 I6
-I23
+I25
 I19
-I17
-I39
-I6
-I175
+I10
+I49
+I1
+I177
 I0
-tp188
-(dp189
-tp190
-Rp191
+tp187
+(dp188
+tp189
+Rp190
 sg31
-(lp192
+(lp191
 Vstylesheet
-p193
+p192
 asg33
 g26
 ((I2024
@@ -606,45 +604,45 @@ I0
 I6
 I175
 I0
-tp194
-(dp195
-tp196
-Rp197
-sbsa(dp198
+tp193
+(dp194
+tp195
+Rp196
+sbsa(dp197
 g14
 I00
 sg15
-(lp199
-F11.0
-aF556.0
+(lp198
+F10.0
+aF566.0
 asg17
 (itiddlywiki
 Tiddler
-p200
-(dp201
+p199
+(dp200
 g21
-V<<print $inventario.join(", ")>>
-p202
+VInventário:\u000a<<if $inventario.length == 0>>\u000a    Seu inventário está vazio.\u000a<<else>>\u000a    <<for _item range $inventario>>\u000a        - <<=_item>>\u000a    <</for>>\u000a<</if>>
+p201
 sg23
-VStoryMenu
-p203
+VStoryCaption
+p202
 sg25
 g26
 ((I2024
 I6
-I23
-I19
-I22
-I57
-I6
-I175
+I25
+I18
+I44
+I44
+I1
+I177
 I0
-tp204
-(dp205
-tp206
-Rp207
+tp203
+(dp204
+tp205
+Rp206
 sg31
-(lp208
+(lp207
 sg33
 g26
 ((I2024
@@ -656,14 +654,114 @@ I47
 I6
 I175
 I0
-tp209
-(dp210
-tp211
-Rp212
-sbsasS'scale'
-p213
-I1
-sS'snapping'
+tp208
+(dp209
+tp210
+Rp211
+sbsa(dp212
+g14
+I01
+sg15
+(lp213
+F165.0
+aF9.0
+asg17
+(itiddlywiki
+Tiddler
 p214
+(dp215
+g21
+VHá milênios existiu uma terra rica e próspera, alguns dizem ter sido o berço da humanidade e da magia, porém, com o ataque e regime cruel de 1000 anos do Herói Traidor Matin'ornom, o arquipélago de Etrun'ya desapareceu.\u000a\u000aDizem que quem encontrar a terra perdida poderá se tornar Rei e possuir o que magos e estudiosos matariam para ter: todo o conhecimento de Mundia.\u000a<<audio "bgMusic" loop play>>\u000a[[Continuar]]
+p216
+sg23
+VIntrodução
+p217
+sg25
+g26
+((I2024
+I6
+I27
+I21
+I1
+I6
+I3
+I179
+I0
+tp218
+(dp219
+tp220
+Rp221
+sg31
+(lp222
+sg33
+g26
+((I2024
+I6
+I27
+I20
+I50
+I37
+I3
+I179
+I0
+tp223
+(dp224
+tp225
+Rp226
+sbsa(dp227
+g14
+I00
+sg15
+(lp228
+F14.0
+aF701.0
+asg17
+(itiddlywiki
+Tiddler
+p229
+(dp230
+g21
+V<<cacheaudio "bgMusic" "assets/sounds/bg.ogg">>
+p231
+sg23
+VStoryInit
+p232
+sg25
+g26
+((I2024
+I6
+I27
+I20
+I59
+I22
+I3
+I179
+I0
+tp233
+(dp234
+tp235
+Rp236
+sg31
+(lp237
+sg33
+g26
+((I2024
+I6
+I27
+I20
+I54
+I59
+I3
+I179
+I0
+tp238
+(dp239
+tp240
+Rp241
+sbsasS'scale'
+p242
+F1.0
+sS'snapping'
+p243
 I00
 ss.
